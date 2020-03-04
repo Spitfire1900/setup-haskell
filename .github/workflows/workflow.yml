@@ -24,4 +24,9 @@ jobs:
 
     - name: npm test
       run: npm test
-      
+    
+    - name: ls
+      run: |
+        ls -l
+        ls -l /
+        ls -l /opt

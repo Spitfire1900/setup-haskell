@@ -23,13 +23,13 @@ describe('find-haskell', () => {
     fs.writeFileSync(`${cabalDir}.complete`, 'hello');
   });
 
-  afterAll(async () => {
-    try {
-      await io.rmRF(toolDir);
-    } catch {
-      console.log('Failed to remove test directories');
-    }
-  }, 100000);
+//   afterAll(async () => {
+//     try {
+//       await io.rmRF(toolDir);
+//     } catch {
+//       console.log('Failed to remove test directories');
+//     }
+//   }, 100000);
 
   it('Uses version of ghc installed in cache', async () => {
     // This will throw if it doesn't find it in the cache (because no such version exists)

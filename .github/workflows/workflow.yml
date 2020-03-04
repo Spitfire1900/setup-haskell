@@ -27,6 +27,6 @@ jobs:
     
     - name: ls
       run: |
-        ls -l
+        ls -l .
         ls -l /
         ls -l /opt
